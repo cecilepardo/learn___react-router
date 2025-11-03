@@ -1,5 +1,8 @@
+import { useParams } from "react-router-dom";
+
 function Article() {
-  return <h1>Hello from Article</h1>;
+  const { id } = useParams<{ id: string }>();
+  return <h1>Article {id}</h1>;
 }
 
 export default Article;
